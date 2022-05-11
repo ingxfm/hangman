@@ -11,8 +11,6 @@ lives = 6
 
 #Import the logo from hangman_art.py and print it at the start of the game.
 print(hangman_art.logo)
-#Testing code
-# print(f'The solution is {chosen_word}.')
 
 #Create blanks
 word_in_blank = []
@@ -30,10 +28,6 @@ while "_" in word_in_blank:
     for i in range(word_length):
         if chosen_word[i] == guess:
             word_in_blank[i] = guess
-
-        # #letter = chosen_word[i]        
-        # if letter == guess:
-        #     word_in_blank[i] = letter
 
     #Check if user is wrong.
     if guess not in chosen_word:
